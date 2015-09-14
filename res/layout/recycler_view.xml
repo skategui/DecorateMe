@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/custom_green"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/new_logo_white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="INTERESTED IN?"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/tvTitle"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginTop="65dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/noResult"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/no_result"
+            android:gravity="center"
+            android:textSize="45dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/tvNoResult"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/internet_msg"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_below="@+id/tvNoResult"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/no_internet"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        fab:fab_showShadow="true"
+        fab:fab_colorNormal="@color/custom_green"
+        fab:fab_colorPressed="@color/custom_green"
+        fab:fab_colorRipple="@color/custom_dark_green_trans"
+        android:src="@android:drawable/ic_menu_search"
+        fab:fab_showAnimation="@anim/show_from_bottom"
+        fab:fab_hideAnimation="@anim/hide_to_bottom"/>
+
+</FrameLayout>

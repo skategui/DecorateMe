@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="custom_green">#2ecc7b</color>
+    <color name="custom_green_trans">#d92ecc7b</color>
+    <color name="custom_dark_green_trans">#d91cbbb4</color>
+    <color name="background">#F5F5F5F5</color>
+
+    <color name="holo_red">#FF5A60</color>
+    <color name="cant_click">#B2DFDB</color>
+
+</resources>

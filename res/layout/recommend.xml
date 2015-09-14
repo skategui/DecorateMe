@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/rlGeneral2"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Fancy enough ?"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/custom_green"
+            android:id="@+id/tvTitle"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:background="@drawable/background_effect"
+            android:padding="10dp"
+            android:id="@+id/rlGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:id="@+id/ivBackground"
+                android:background="@android:color/white"
+
+                android:layout_width="match_parent"
+                android:layout_height="170dip"
+                android:scaleType="centerCrop"
+                android:src="@drawable/init" />
+
+
+            <TextView
+                android:layout_below="@+id/ivBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="8dip"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:id="@+id/tvTitleProduct"
+                android:text="MALM"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_below="@+id/tvTitleProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="8dip"
+                android:textColor="@android:color/black"
+                android:paddingTop="10dip"
+                android:id="@+id/tvPrice"
+                android:text="245 £"
+                android:textSize="20dp" />
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/rlGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:id="@+id/llActions"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:gravity="center"
+                    android:id="@+id/ivDislike"
+                    android:layout_marginRight="24dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/circlebutton_red"
+                    >
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:id="@+id/ivDislikeIcon"
+                        android:src="@drawable/ic_thumb_down_white_48dp"
+                        />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="24dp"
+                    android:id="@+id/ivAdd"
+                    android:orientation="horizontal"
+                    android:background="@drawable/circlebutton_green_animation"
+                    >
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:id="@+id/addIcon"
+                        android:src="@drawable/ic_add_shopping_cart_white_48dp"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/rlcheckout"
+        android:background="@color/cant_click"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:text="CHECKOUT"
+            android:textSize="28dp"
+            android:id="@+id/tvNBArticle"
+            android:gravity="center"
+            android:textColor="@drawable/text_color_white_green"
+            />
+
+
+    </RelativeLayout>
+    <!--
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            layout="@layout/railmenu" />
+    -->
+</RelativeLayout>

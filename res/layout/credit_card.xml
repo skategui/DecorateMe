@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/llScan"
+        >
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/ic_settings_overscan_white_48dp"
+            android:id="@+id/scanButton"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Scan your card"
+            android:gravity="left"
+            android:textStyle="italic|bold"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/custom_green"
+            android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Or simply fill the card"
+            android:gravity="center"
+            android:textStyle="italic|bold"
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/custom_green"
+            android:layout_height="wrap_content" />
+
+    <com.vinaygaba.creditcardview.CreditCardView
+        android:id="@+id/card1"
+        android:layout_width="fill_parent"
+        android:layout_height="225dp"
+        android:background="@drawable/cardbackground_world"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        app:cardNumber="550000555553891"
+        app:cardName="G Agis"
+        app:cardNumberTextColor="#cccccc"
+        app:cardNumberFormat="masked_all_but_last_four"
+        app:cardNameTextColor="#cccccc"
+        app:expiryDate="04/18"
+        app:type="visa"
+        app:putChip="true"
+        app:expiryDateTextColor="#cccccc"
+        app:isEditable="true"
+        app:validTillTextColor="#cccccc"
+        app:hintTextColor = "#cccccc"
+        />
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/rlPay"
+        android:background="@drawable/button_green_white"
+        android:textSize="16dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <TextView
+
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="PAY"
+            android:id="@+id/tvPrice"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:textColor="@drawable/text_color_white_green"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DecorateMe</string>
+    <string name="no_result">No result !</string>
+    <string name="internet_msg">Are you connected to internet ?\nOnce connected, pull to refresh. </string>
+    <string name="twitter_login">Login with Twitter</string>
+    <string name="app_desc">Give a new life to your place</string>
+
+
+    <string name="addPayment">Add Payment Method</string>
+    <string name="paymentMethods">Payment Methods</string>
+
+    <string name="endingIn">Card ending in </string>
+    <string name="progressMessage">Creating Token&#8230;</string>
+    <string name="validationErrors">Validation Errors</string>
+
+    <string name="cardNumber">Card Number</string>
+    <string name="save">Save</string>
+    <string name="cvc">CVC</string>
+
+    <string name="ok">OK</string>
+</resources>
