@@ -7,7 +7,7 @@ I developed a mobile app that learns from the user to better predict and recomme
 
 
 ![Screenshot](https://github.com/skategui/DecorateMe/blob/master/screenshots/homepage.png)
-![Screenshot](https://github.com/skategui/DecorateMe/blob/master/screenshots/recommend.png)
+![Screenshot](https://github.com/skategui/DecorateMe/blob/master/screenshots/recommendation.png)
 ![Screenshot](https://github.com/skategui/DecorateMe/blob/master/screenshots/dislike.png)
 
 
